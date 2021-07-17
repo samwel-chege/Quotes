@@ -19,9 +19,9 @@ export class QuoteComponent implements OnInit {
      this.quotes[index].showDescription = !this.quotes[index].showDescription;
    }
 
-   completeQuote(isComplete:any, index:any){
+   deleteQuote(isComplete:any, index:any){
      if(isComplete){
-       this.quotes.splice(index,1);
+       let toDelete = confirm(`Are you you want to delete ${this.quotes[index].name}?`)
      }
    }
   constructor() { }
