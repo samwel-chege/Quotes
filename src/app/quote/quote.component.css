@@ -1,0 +1,10 @@
+#qcard{
+   background-color: powderblue;
+   border-color: palegreen; 
+}
+.details{
+    background-color: powderblue;
+    width: 100px;
+    text-align: center;
+    margin-left: 20%;
+}

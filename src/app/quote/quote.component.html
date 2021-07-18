@@ -4,9 +4,10 @@
   <div class="row">
     <div class="col-md-6">
       <div *ngFor="let quote of quotes; let i = index">
-        <div>
-          <h4 appHighlight> {{quote.name}} created on {{quote.createDate | date}} </h4>
-          <button (click)="toggleDetails(i)" class="btn btn-primary">
+        <div class="card boarder-success mb-3" style="width: 18rem;height: max-content;" id="qcard">
+          <h5 class="card-title" appHighlight> {{quote.name}}  </h5>
+          <h6 class="card-subtitle text-muted">created on {{quote.createDate | date}}</h6>
+          <button (click)="toggleDetails(i)" class="details">
             Details
           </button>
           <app-quote-detail
