@@ -1,3 +1,7 @@
 <p>{{quote.description}}</p>
 <p>This quote was created  {{quote.createDate | dateCount}} ago</p>
+<button (click)= 'upVote(true)'>upvote</button>
+<p> {{quote.upVote}} </p>
+<button (click)= 'downVote(true)'>downvote</button>
+<p> {{quote.downVote}} </p>
 <button (click)= 'quoteDelete(true)' class="btn btn-danger">Delete quote</button>
