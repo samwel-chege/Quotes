@@ -3,9 +3,9 @@
   <hr />
   <div class="row">
     <div class="col-md-6">
-      <div *ngFor="let quote of quotes; let i = index">
-        <div class="card boarder-success mb-3" style="width: 18rem;height: max-content;" id="qcard">
-          <h5 class="card-title" appHighlight> {{quote.name}}  </h5>
+      <div *ngFor="let quote of quotes; let i = index" >
+        <div class="card boarder-success mb-3" style="width: 18rem;height: max-content;" id="qcard" >
+          <h5 class="card-title" appHighlight [ngClass]= "{'xyz':quote.isInspirational}"> {{quote.name}}  </h5>
           <h6 class="card-subtitle text-muted">created on {{quote.createDate | date}}</h6>
           <button (click)="toggleDetails(i)" class="details">
             Details
